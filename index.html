@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" dir="ltr">
 <head>
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107004784-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107004784-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments)};
@@ -10,7 +10,7 @@
 
       gtag('config', 'UA-107004784-1');
     </script>
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/icon/apple-icon-57x57.png">
+ -->    <link rel="apple-touch-icon" sizes="57x57" href="icons/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/icon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="icons/icon/apple-icon-76x76.png">
@@ -38,37 +38,21 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <div class="header-container">
-        <header class="row align-justify">  
-            <div class="columns small-9  large-3  " id = "imgHeader">
-              <img src="assets/umbrellaLogo.svg">
-            </div>
-            <div class="columns show-for-large medium-9">
-              <ul id="menu-header" class="menu headermenu">
-                <li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-95"><a href="#">Inicio</a></li>
-                <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="#">Contacto</a></li>
-                <li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="#">pagina final</a></li>
-                <li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="#">Quienes somos</a></li>
-                <li id="menu-item-178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178"><a href="#">info</a></li>
-                </ul> 
-            </div>
-            <div class="columns hide-for-large small-3" id = "menuListHeader">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <a><img src="assets/menu.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
-                        <ul class="menu" id="listMenuHeader">
-                            <ul id="menu-header-1" class="menu headermenu vertical menu">
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-95"><a href="#">Inicio</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href=#">Contacto</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="#">pagina final</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="#">Quienes somos</a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178"><a href="#">info</a></li>
-                            </ul> 
-                        </ul>
-                    </li>
-                </ul>            
-            </div>
-        </header>
+    <div data-sticky-container>
+      <div class="top-bar headermenu" data-sticky data-options="marginTop: 0" id="example-menu">
+        <div class="top-bar-left" style="padding-left: 80px;">
+          <ul class="menu">
+             <img src="assets/umbrellaLogo.svg">
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu" data-magellan>
+            <li><a href="#first">One</a></li>
+            <li><a href="#second">Two</a></li>
+            <li><a href="#third">Three</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit >
@@ -141,7 +125,7 @@
       </div>
     </article> 
 
-    <div class="row medium-up-2 ">
+    <div class="row medium-up-2 " id="first" data-magellan-target="first">
       <div class="small-12 medium-6 columns">
         <div class="card columns">
           <article>  
@@ -172,7 +156,7 @@
         </div>
       </div>
 
-      <div class="small-12 medium-6 columns">
+      <div class="small-12 medium-6 columns" id="second" data-magellan-target="second">
         <div class="card columns">
           <article>  
             <picture>

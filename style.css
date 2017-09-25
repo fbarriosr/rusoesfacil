@@ -1,5 +1,5 @@
 body {
-  background: white; }
+  background: orange; }
 
 header {
   background: white;
@@ -21,9 +21,12 @@ div#example-menu {
   height: 100%;
   background: white; }
 
+div#example-menu {
+  padding: 0px;
+  position-top: -16px; }
+
 .top-bar, .top-bar ul {
-  background: white;
-  /* height: 150px; */ }
+  background: white; }
 
 .top-bar .menu > li:not(.menu-text) > a {
   padding: 1rem;
@@ -44,6 +47,13 @@ div#example-menu {
 .headermenu a, .headermenu p {
   color: #0E3E71;
   font-weight: bold; }
+
+div#example-menu {
+  height: 120px; }
+
+.headermenu {
+  width: 100%;
+  height: 120px; }
 
 .row.title-bar {
   background: transparent; }

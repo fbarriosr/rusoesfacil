@@ -1,4 +1,4 @@
-$body-background: white;
+$body-background: orange;
 $body-background404: #15210a;
 $h3-404: white;
 $p-404: white;
@@ -60,9 +60,12 @@ div#example-menu {
     height: 100%;
     background: $header-background;
 }
+div#example-menu {
+    padding: 0px;
+    position-top: -16px;
+}
 .top-bar, .top-bar ul {
     background: $header-background;
-    /* height: 150px; */
 }
 .top-bar .menu > li:not(.menu-text) > a {
     padding: 1rem;
@@ -87,6 +90,14 @@ div#example-menu {
 .headermenu a, .headermenu p {
   color: $header-textcolor;
   font-weight: bold;
+
+}
+div#example-menu {
+    height: 120px;
+}
+.headermenu {
+  width: 100%;
+  height: 120px;
 }
 
 .row.title-bar {
