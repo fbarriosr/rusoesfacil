@@ -1,13 +1,13 @@
-$body-background: orange;
+$body-background: white;
 $body-background404: #15210a;
 $h3-404: white;
 $p-404: white;
 $header-background: white;
 $footer-background: #0E3E71;
 $footer-color: white;
-$card-background: #F7F7F7;
-$card-textcolor: #777777;
-$card-titulocolor: #2691FB;
+$card-background: transparent;
+$card-textcolor: #767E8B;
+$card-titulocolor: #0076E8;
 $card-bordercolor: transparent;
 $card-paddingheader: 10px;
 $card-paddingright: 20px;
@@ -15,9 +15,9 @@ $card-paddingbottom: 10px;
 $card-paddingleft: 20px;
 $btn-textcolor: #2691FB;
 $btn-bordercolor: #2691FB;
-$card2-background: #0E3E71;
-$card2-textcolor: white;
-$card2-titulocolor: #2691FB;
+$card2-background: transparent;
+$card2-textcolor: #003E73;
+$card2-titulocolor: #003E73;
 $btn2-textcolor: white;
 $btn2-bordercolor: #2691FB;
 $header-textcolor: #0E3E71;
@@ -92,6 +92,17 @@ div#example-menu {
   font-weight: bold;
 
 }
+#card2Div{
+  padding-top: 0px;
+}
+#article1{
+  max-width: 100%;
+  background: -moz-linear-gradient(top, rgba(156,195,226,1) 0%, rgba(137,189,230,1) 62%, rgba(135,188,230,0.7) 68%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(156,195,226,1) 0%,rgba(137,189,230,1) 62%,rgba(135,188,230,0.7) 68%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(156,195,226,1) 0%,rgba(137,189,230,1) 62%,rgba(135,188,230,0.7) 68%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cc3e2', endColorstr='#007db9e8',GradientType=0 );
+}
+
 div#example-menu {
     height: 120px;
 }
@@ -169,9 +180,13 @@ a::after {
   color: $card-textcolor;
 }
 
-.card-section h5 {
+.card-section h5{
   color: $card-titulocolor;
   text-transform: uppercase;
+  font-weight: bolder;  
+}
+#imageCard1 {
+  padding-left: 20px;
 }
 
 .small-12.medium-6.columns.card2-section {
@@ -205,11 +220,28 @@ button.hollow.button {
 .card2-section p {
   color: $card2-textcolor;
 }
+ .card2-section h3 {
+  color: $card-titulocolor;
+  font-weight: bolder;  
+}
 
 .card2-section h5 {
   color: $card2-titulocolor;
   text-transform: uppercase;
+  font-weight: bolder;  
 }
+
+.textSpecial {
+  color: $card2-titulocolor;
+  text-transform: uppercase;
+  font-weight: bolder;  
+  padding-bottom: 20px;
+}
+
+#imagesBrand{
+padding: 20px;
+}
+
 button.hollow.button.button2 {
   color:$btn2-textcolor;
   border-color: $btn2-bordercolor; 

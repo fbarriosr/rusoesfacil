@@ -1,5 +1,5 @@
 body {
-  background: orange; }
+  background: white; }
 
 header {
   background: white;
@@ -47,6 +47,19 @@ div#example-menu {
 .headermenu a, .headermenu p {
   color: #0E3E71;
   font-weight: bold; }
+
+#card2Div {
+  padding-top: 0px; }
+
+#article1 {
+  max-width: 100%;
+  background: -moz-linear-gradient(top, #9cc3e2 0%, #89bde6 62%, rgba(135, 188, 230, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9cc3e2 0%, #89bde6 62%, rgba(135, 188, 230, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9cc3e2 0%, #89bde6 62%, rgba(135, 188, 230, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cc3e2', endColorstr='#007db9e8',GradientType=0 ); }
 
 div#example-menu {
   height: 120px; }
@@ -104,15 +117,19 @@ a::after {
   font-weight: bold; }
 
 .card-section {
-  background: #F7F7F7;
+  background: transparent;
   padding: 10px 20px 10px 20px; }
 
 .card-section p {
-  color: #777777; }
+  color: #767E8B; }
 
 .card-section h5 {
-  color: #2691FB;
-  text-transform: uppercase; }
+  color: #0076E8;
+  text-transform: uppercase;
+  font-weight: bolder; }
+
+#imageCard1 {
+  padding-left: 20px; }
 
 .small-12.medium-6.columns.card2-section {
   padding-left: 20px;
@@ -134,17 +151,31 @@ button.hollow.button {
   padding: 0px; }
 
 .card2-section {
-  background: #0E3E71; }
+  background: transparent; }
 
 .header-container {
   background: white; }
 
 .card2-section p {
-  color: white; }
+  color: #003E73; }
+
+.card2-section h3 {
+  color: #0076E8;
+  font-weight: bolder; }
 
 .card2-section h5 {
-  color: #2691FB;
-  text-transform: uppercase; }
+  color: #003E73;
+  text-transform: uppercase;
+  font-weight: bolder; }
+
+.textSpecial {
+  color: #003E73;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-bottom: 20px; }
+
+#imagesBrand {
+  padding: 20px; }
 
 button.hollow.button.button2 {
   color: white;
