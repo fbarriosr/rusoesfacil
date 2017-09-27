@@ -215,6 +215,9 @@ ul.menu.headermenu {
     margin-top: 10px; } }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  #menuListHeader a {
+    font-size: 12px; }
+
   hr {
     margin-left: 0px; }
 
@@ -226,7 +229,11 @@ ul.menu.headermenu {
     text-align: center; }
 
   #menuFooterMobile {
-    padding: 0px; } }
+    padding: 0px; }
+
+  #videoFrame {
+    width: 320px;
+    height: 180px; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
   #imgHeader img {

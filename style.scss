@@ -295,6 +295,9 @@ ul.menu.headermenu {
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+   #menuListHeader a {
+  font-size: 12px;
+  }
 
   hr{
     margin-left: 0px;
@@ -311,6 +314,10 @@ ul.menu.headermenu {
 
   #menuFooterMobile {
     padding: 0px;
+  }
+  #videoFrame {
+    width: 320px;
+    height: 180px;
   }
 }
 
@@ -331,7 +338,6 @@ ul.menu.headermenu {
  #menuListHeader a {
   font-size: 12px;
   }
-
   #imgOrbit{
     content: src()
   }

@@ -41,18 +41,44 @@
 <body>
     <div data-sticky-container>
       <div class="top-bar headermenu" data-sticky data-options="marginTop: 0" id="example-menu">
-        <div class="top-bar-left" style="padding-left: 80px;">
-          <ul class="menu">
-             <img src="assets/umbrellaLogo.svg">
-          </ul>
+        <div class="row">
+          <div class="columns small-5  large-3 " style="width: 250px;">
+            <ul class="menu">
+               <img src="assets/umbrellaLogo.svg">
+            </ul>
+          </div>
+          <div class="columns small-12 medium-9 show-for-medium">
+            <ul class="menu" data-magellan id="menuListHeader">
+              <li><a href="#first" >EVIDENCIA CIENTIFÍCA</a></li>
+              <li><a href="#second">PREVENCIÓN DEL CÁNCER</a></li>
+              <li><a href="#third" >DÓNDE ENCONTRARNOS</a></li>
+            </ul>
+          </div>
+          <div class="columns small-12 medium-9 show-for-small-only" >
+            <ul class="menu" data-magellan id="menuListHeader">
+              <li><a href="#first" style="text-align: left;">EVIDENCIA <br>CIENTIFÍCA</a></li>
+              <li><a href="#second" style="text-align: left;">PREVENCIÓN <br>DEL CÁNCER </a></li>
+              <li><a href="#third" style="text-align: left;">DÓNDE <br>ENCONTRARNOS</a></li>
+            </ul>
+          </div>
+     <!--     <div class="columns hide-for-large small-3" id = "menuListHeader">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                  <a>
+                    <img src="http://localhost/web/wp-content/uploads/2017/08/if_th-menu_216424.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                                                  </a>
+                    <ul class="menu" id="listMenuHeader">
+                     <ul id="menu-header-1" class="menu headermenu vertical menu">
+                       <li><a href="#first">EVIDENCIA CIENTIFÍCA</a></li>
+                       <li><a href="#second">PREVENCIÓN DEL CÁNCER</a></li>
+                       <li><a href="#third">DÓNDE ENCONTRARNOS</a></li>
+                    </ul>
+                  </ul>
+                </li>
+            </ul>            
+        </div> -->
         </div>
-        <div class="top-bar-right">
-          <ul class="menu" data-magellan>
-            <li><a href="#first">One</a></li>
-            <li><a href="#second">Two</a></li>
-            <li><a href="#third">Three</a></li>
-          </ul>
-        </div>
+
+        
       </div>
     </div>
 
@@ -143,11 +169,12 @@
         </div>
       </div>
 
-      <div class="small-12 medium-6 columns" id="second" data-magellan-target="second">
+      <div class="small-12 medium-6 columns">
         <div class="card columns">
           <article>  
             <picture>
-              <img id="imageCard1" width="auto" height="auto" src="assets/adn.svg"  />        </picture>
+              <img id="imageCard1" width="auto" height="auto" src="assets/adn.svg"  />    
+            </picture>
               
             <div class="card-section">
                 <h5>REPARA EL ADN</h5>
@@ -160,18 +187,20 @@
     </div>
 
 
-    <div class="row text-center">
-      <div class="columns small-12">
+    <div class="row text-center" id="second" data-magellan-target="second" >
+      <div class="columns small-12" >
         <h5 class="textSpecial">¿CÓMO FUNCIONA UMBRELLA INTELLIGENT?</h5>
       </div>  
       <div class="columns small-12">
         <div class="responsive-embed">
             <div class="columns small-12 text-center" >
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc?feature=oembed" frameborder="0" allowfullscreen></iframe>
+                <iframe id ="videoFrame" width="420" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc?feature=oembed" frameborder="0" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> 
       </div>
-      <div class="columns small-12">
+    </div>
+    <div class="row text-center" id="third" data-magellan-target="third"> 
+      <div class="columns small-12" >
       <br>
       <h5 class="textSpecial">ENCUENTRANOS  EN LAS PRINCIPALES FARMACIAS DEL PAÍS</h5>
         <div class="row medium-up-3 " >
@@ -208,22 +237,22 @@
             <div class="small-9 column show-for-medium">
                 <div class="row">
                     <nav class="menu-footer-container">
-                        <ul id="menu-footer" class="menu footermenu">
+                        <ul id="menu-footer" class="menu footermenu" data-magellan>
                             <li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
-                                <a href="#">Quienes somos</a>
+                                <a href="#first">Evidencia Científica</a>
                             </li>
                             <li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98">
-                                <a href="#">Contacto</a>
+                                <a href="#second">Prevención del Cáncer</a>
                             </li>
                             <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
-                                <a href="#">pagina final</a>
+                                <a href="#third">Dónde encontrarnos</a>
                             </li>
                         </ul>
                     </nav>
                     <hr size="8px" color="white">
                 </div>  
                 <div class="row">
-                    <div class="columns small-9 footermenu">
+                    <div class="columns small-9 footermenu" >
                         <p> Derechos reservados Pharma Investi Chile S.A. </p>
                         <p> Pharma Investi de Chile S.A. / Avenida Andres Bello 1495, Providencia, Santiago. </p>
                         <p> Teléfono:(2) 2340 5800 </p>
@@ -246,11 +275,13 @@
                 <img src="assets/umbrella2Logo.svg" class="attachment-full size-full wp-post-image" alt="">
             </div>
             <div class="columns small-12 show-for-small-only" id="menuFooterMobile">
-                <ul id="menu-footer-1" class="menu footermenu vertical menu">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="#">Quienes somos</a>
+                <ul id="menu-footer-1" class="menu footermenu vertical menu" data-magellan>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="#first">Evidencia Científica</a>
                     </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="#">Contacto</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="#">pagina final</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="#second">Prevención del Cáncer</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="#third">Dónde encontrarnos</a>
+                    </li>
                 </ul> 
             </div>
             <div class="columns small-12 footermenu show-for-small-only">
