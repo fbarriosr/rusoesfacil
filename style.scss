@@ -2,8 +2,8 @@ $body-background: white;
 $body-background404: #15210a;
 $h3-404: white;
 $p-404: white;
-$header-background: white;
-$footer-background: #0E3E71;
+$header-background: #009BED;
+$footer-background: #003E73;
 $footer-color: white;
 $card-background: transparent;
 $card-textcolor: #767E8B;
@@ -15,12 +15,13 @@ $card-paddingbottom: 10px;
 $card-paddingleft: 20px;
 $btn-textcolor: #2691FB;
 $btn-bordercolor: #2691FB;
-$card2-background: transparent;
+$card2-background: #F7F7F7;
+$card2-background2: #009BED;
 $card2-textcolor: #003E73;
 $card2-titulocolor: #003E73;
 $btn2-textcolor: white;
 $btn2-bordercolor: #2691FB;
-$header-textcolor: #0E3E71;
+$header-textcolor: white;
 
 $toplogopadding-left: 20px;
 $toplogopadding-top: 20px;
@@ -93,15 +94,19 @@ div#example-menu {
 
 }
 #card2Div{
-  padding-top: 0px;
+  padding-bottom : 0px;
+  padding-top : 0px;
 }
 #article1{
   max-width: 100%;
-  background: -moz-linear-gradient(top, rgba(156,195,226,1) 0%, rgba(137,189,230,1) 62%, rgba(135,188,230,0.7) 68%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(156,195,226,1) 0%,rgba(137,189,230,1) 62%,rgba(135,188,230,0.7) 68%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(156,195,226,1) 0%,rgba(137,189,230,1) 62%,rgba(135,188,230,0.7) 68%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cc3e2', endColorstr='#007db9e8',GradientType=0 );
+  background: $card2-background;
 }
+
+#article2{
+  max-width: 100%;
+  background: $card2-background2;
+}
+
 
 div#example-menu {
     height: 120px;
@@ -212,7 +217,7 @@ button.hollow.button {
     padding: 0px;
 }
 .card2-section{
-  background: $card2-background;
+  background: transparent;
 }
 .header-container {
   background: $header-background;
