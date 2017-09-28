@@ -38,7 +38,7 @@ body {
 }
 header{
   background: $header-background;
-  height: 120px;
+  height: 96px;
   width: auto;
   padding-top: 20px;
 }
@@ -109,11 +109,11 @@ div#example-menu {
 
 
 div#example-menu {
-    height: 120px;
+    height: 96px;
 }
 .headermenu {
   width: 100%;
-  height: 120px;
+  height: 96px;
 }
 
 .row.title-bar {
@@ -173,7 +173,8 @@ a::after {
 
 .headermenu a, .headermenu p {
   color: $header-textcolor;
-  font-weight: bold;
+  font-weight: 700;  
+  font-family:  Open+Sans;
 }
 
 .card-section {
@@ -187,8 +188,8 @@ a::after {
 
 .card-section h5{
   color: $card-titulocolor;
-  text-transform: uppercase;
-  font-weight: bolder;  
+  font-weight: 300;
+  font-family: OpenSans;  
 }
 #imageCard1 {
   padding-left: 20px;
@@ -222,24 +223,48 @@ button.hollow.button {
 .header-container {
   background: $header-background;
 }
+
+#parrafoCard {
+   color: white;
+  font-family: Open+Sans; 
+  font-weight: 400;
+  font-size: 21px;
+}
 .card2-section p {
-  color: $card2-textcolor;
+  color: $card-textcolor;
+  font-family: Open+Sans; 
+  font-weight: 400;
+  font-size: 21px;
 }
  .card2-section h3 {
   color: $card-titulocolor;
-  font-weight: bolder;  
+  font-family: Open+Sans; 
+  font-weight: 300;
+  font-size: 32px;
 }
 
 .card2-section h5 {
   color: $card2-titulocolor;
   text-transform: uppercase;
-  font-weight: bolder;  
+  
+  font-family: Open+Sans; 
+  font-weight: 300;
+  font-size: 32px;
 }
-
+.card2-section h6 {
+  color: white;
+  
+  font-family: Open+Sans; 
+  font-weight: 300;
+  font-size: 32px;
+} 
 .textSpecial {
-  color: $card2-titulocolor;
-  text-transform: uppercase;
-  font-weight: bolder;  
+  color: $card-titulocolor;
+
+  font-weight: 300;
+  font-family: Open+Sans; 
+
+  font-size: 32px;
   padding-bottom: 20px;
 }
 
@@ -254,8 +279,13 @@ button.hollow.button.button2 {
 
  #menuListHeader  {
   text-align: right;
-   margin-top: 20px;
-  }
+  margin-top: 20px;
+
+}
+ #menuListHeader a {
+  font-family: OpenSans;
+  font-weight: 700;
+}
 
 ul.menu.headermenu {
     margin-top: 15px;
@@ -286,7 +316,9 @@ ul.menu.headermenu {
   background: $body-background404;
 }
 
-
+.niko{
+  padding-top: 100px;
+}
 
 //Medias Queris
 
@@ -323,6 +355,9 @@ ul.menu.headermenu {
   #videoFrame {
     width: 320px;
     height: 180px;
+  }
+  .niko{
+    padding-top: 10px;
   }
 }
 
