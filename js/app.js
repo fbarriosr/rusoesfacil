@@ -2,15 +2,62 @@ $(document).foundation()
 
 var imgObit = $('#rata');
 
+var flag = 1;
+
 
 $(document).ready(function (){
-		/*if (imgObit != null){
-			//imgObit.addClass('orbit-image') ; 
-			 imgObit.css('height', 'auto') ; 
-		}*/
+        /*if (imgObit != null){
+            //imgObit.addClass('orbit-image') ; 
+             imgObit.css('height', 'auto') ; 
+        }*/
 
+    // codigo para arreglar bugs del menu y del orbit slider
+    
+    $('body').bind('touchmove', function(e) { 
+        console.log($(this).scrollTop()); // Replace this with your code.
+
+        if ($('#example-menu').is(":visible") )
+        {
+          $('#example-menu').hide();
+        }
+
+    });
+
+    $('.clickMenu').click(function(){ 
+        if ($('#example-menu').is(":visible") )
+        {
+          $('#example-menu').hide();
+          if (flag)
+            {
+              $('.orbit').css("z-index", "-1");
+              flag = 0;
+            }else {
+              $('.orbit').css("z-index", "0"); 
+               flag = -1;
+            }
+        }
+    });
+     $('#clickBtnMenu').click(function(){ 
+        if (flag)
+        {
+          $('.orbit').css("z-index", "-1");
+          flag = 0;
+        }else {
+          $('.orbit').css("z-index", "0"); 
+           flag = -1;
+        }
+    });
+
+    
+
+
+    
+
+    
+    
 
 });
+
 
 $(function() {
    $(window).on('resize', function(e) {

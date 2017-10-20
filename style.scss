@@ -35,6 +35,9 @@ $orbit-bulletcoloractive: #3893FF;
 
 body {
   background: $body-background;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 header{
   background: $header-background;
@@ -44,7 +47,7 @@ header{
 }
 
 li#rata {
-    text-align: center;
+  text-align: center;
 }
 
 .row.container {
@@ -52,47 +55,48 @@ li#rata {
 }
 
 .columns.hide-for-medium.small-3 {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 
 }
 
 div#example-menu {
-    height: 100%;
-    background: $header-background;
+  height: 100%;
+  background: $header-background;
 }
 div#example-menu {
-    padding: 0px;
-    position-top: -16px;
+  padding: 0px;
+  position-top: -16px;
 }
 .top-bar, .top-bar ul {
-    background: $header-background;
+  background: $header-background;
 }
 .top-bar .menu > li:not(.menu-text) > a {
-    padding: 1rem;
-    color: $header-textcolor;
-    font-weight: normal;
-
+  padding: 1rem;
+  color: $header-textcolor;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .top-bar .menu li:not(:last-child) {
-    border-right: 0px solid #4e4e4e;
+  border-right: 0px solid #4e4e4e;
 }
 
 .top-bar-left.hide-for-small-only {
-    padding-left: $toplogopadding-left;
-    padding-top: $toplogopadding-top;
+  padding-left: $toplogopadding-left;
+  padding-top: $toplogopadding-top;
 }
 
 .top-bar-right {
-    padding-top: $topmenupadding-top;
-    padding-right: $topmenupadding-right;
+  padding-top: $topmenupadding-top;
+  padding-right: $topmenupadding-right;
 }
 
 .headermenu a, .headermenu p {
   color: $header-textcolor;
-  font-weight: bold;
-
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
+
 #card2Div{
   padding-bottom : 0px;
   padding-top : 0px;
@@ -109,7 +113,7 @@ div#example-menu {
 
 
 div#example-menu {
-    height: 96px;
+  height: 120px;
 }
 .headermenu {
   width: 100%;
@@ -117,7 +121,7 @@ div#example-menu {
 }
 
 .row.title-bar {
-    background: transparent;
+  background: transparent;
 }
 
 .footer, .footer-container {
@@ -141,26 +145,27 @@ div#example-menu {
 }
 
 .footermenu p {
- font-size: 10px;
- margin-bottom: 0px;
+  font-size: 10px;
+  margin-bottom: 0px;
 }
 
 hr {
-    margin-top: 0px;
-    margin-left: 14px;
-    margin-right: 14px;
-    width: 100%;
+  margin-top: 0px;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: 100%;
 }
 .columns.small-12.show-for-small-only {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 ul#listMenuHeader {
-    font-size: 12px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a::after {
-    visibility: visible;
+  visibility: visible;
 }
 
 #listMenuHeader, #menu-footer-1{
@@ -168,13 +173,14 @@ a::after {
 }
 
 .row.footerSocial.show-for-small-only {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .headermenu a, .headermenu p {
   color: $header-textcolor;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;  
-  font-family:  Open+Sans;
+
 }
 
 .card-section {
@@ -184,20 +190,25 @@ a::after {
 
 .card-section p {
   color: $card-textcolor;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 400;
+  font-size:  16px;
 }
 
 .card-section h5{
   color: $card-titulocolor;
+  font-family: 'Open Sans', sans-serif; 
   font-weight: 300;
-  font-family: OpenSans;  
+  font-size:  24px;
+  
 }
 #imageCard1 {
   padding-left: 20px;
 }
 
 .small-12.medium-6.columns.card2-section {
-    padding-left: 20px;
-    padding-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .card.columns{
@@ -215,7 +226,7 @@ button.hollow.button {
 }
 
 .small-12.medium-6.columns.card2 {
-    padding: 0px;
+  padding: 0px;
 }
 .card2-section{
   background: transparent;
@@ -225,20 +236,20 @@ button.hollow.button {
 }
 
 #parrafoCard {
-   color: white;
-  font-family: Open+Sans; 
+  color: white;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 21px;
 }
 .card2-section p {
   color: $card-textcolor;
-  font-family: Open+Sans; 
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 21px;
 }
  .card2-section h3 {
   color: $card-titulocolor;
-  font-family: Open+Sans; 
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 32px;
 }
@@ -246,30 +257,26 @@ button.hollow.button {
 .card2-section h5 {
   color: $card2-titulocolor;
   text-transform: uppercase;
-  
-  font-family: Open+Sans; 
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 32px;
 }
 .card2-section h6 {
   color: white;
-  
-  font-family: Open+Sans; 
+  font-family: 'Open Sans', sans-serif; 
   font-weight: 300;
   font-size: 32px;
 } 
 .textSpecial {
   color: $card-titulocolor;
-
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-family: Open+Sans; 
-
   font-size: 32px;
   padding-bottom: 20px;
 }
 
 #imagesBrand{
-padding: 20px;
+  padding: 20px;
 }
 
 button.hollow.button.button2 {
@@ -283,12 +290,12 @@ button.hollow.button.button2 {
 
 }
  #menuListHeader a {
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
 ul.menu.headermenu {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 #error-404Picture img {
@@ -298,18 +305,20 @@ ul.menu.headermenu {
 #error-404Title p  {
   color: $h3-404;
   font-size: 48px;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 #error-404 p {
   color: $p-404;
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .img-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #body404 {
@@ -324,16 +333,16 @@ ul.menu.headermenu {
 
 /* Small only */
 @media screen and (max-width: 350px) {
-
   #menuListHeader  {
-   text-align: right;
-   margin-top: 10px;
+    text-align: right;
+    margin-top: 10px;
   }
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
    #menuListHeader a {
-  font-size: 12px;
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 12px;
   }
 
   hr{
@@ -348,7 +357,6 @@ ul.menu.headermenu {
   div#imgLogoFooter2Mobile, div#imgFacebookMobile, #pFacebookMobile {
     text-align: center;
   }
-
   #menuFooterMobile {
     padding: 0px;
   }
@@ -359,6 +367,27 @@ ul.menu.headermenu {
   .niko{
     padding-top: 10px;
   }
+  .top-bar.headermenu.sticky {
+    height: auto;
+  }
+  .headermenu {
+    width: 100%;
+    min-height: 80px;
+    padding-top: 0px;
+  }
+
+  #rowMobile{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  div#rowMobile {
+    width: 100%;
+    height: 100%;
+  }
+  .title-bar {
+    width: 100%;
+  }
 }
 
 
@@ -368,6 +397,12 @@ ul.menu.headermenu {
    #imgHeader img {
     width: 150px;
     padding-top: 10px;
+  }
+  div#rowMobile {
+    width: 100%;
+  }
+  .title-bar {
+    width: 100%;
   }
 
 }
