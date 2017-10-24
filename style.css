@@ -20,6 +20,10 @@ li#rata {
   text-align: center;
   padding-top: 20px; }
 
+iframe {
+  width: auto;
+  height: auto; }
+
 div#example-menu {
   height: 100%;
   background: #009BED; }
@@ -268,9 +272,6 @@ ul.menu.headermenu {
   div#imgLogoFooter2Mobile, div#imgFacebookMobile, #pFacebookMobile {
     text-align: center; }
 
-  .top-bar.headermenu.sticky {
-    height: auto; }
-
   #menuFooterMobile {
     padding: 0px; }
 
@@ -280,6 +281,9 @@ ul.menu.headermenu {
 
   .niko {
     padding-top: 10px; }
+
+  .top-bar.headermenu.sticky {
+    height: auto; }
 
   .headermenu {
     width: 100%;
